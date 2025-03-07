@@ -1,0 +1,24 @@
+
+
+nav{
+    margin: 5rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #7F7BBA;
+    border-radius: 5rem;
+    display: flex;
+    padding: 10px 20px;
+    width: 28rem;
+    justify-content: center; 
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+a:hover {
+    border-bottom: #ADA6D2 2px solid;
+}

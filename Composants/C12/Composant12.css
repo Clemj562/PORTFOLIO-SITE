@@ -1,0 +1,28 @@
+body{
+    margin: 5rem;
+}
+
+
+button{
+    background-color: #7F7BBA;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin: 10rem;
+    padding: 1rem;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    transition: transform 0.3s ease, 
+    background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #ADA6D2;
+    transform: scale(1.2);
+    transition: transform 0.3s ease, 
+    background-color 0.3s ease;
+}

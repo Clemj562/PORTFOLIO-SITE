@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Composant8.css">
+    <title>Site Portfolio</title>
+</head>
+<body>
+    <img src="./Content/HardSkill.jpg" alt="hardskill">
+    <div id="HoverDiv" style="display: none;">Harskill</div>   
+</body>
+
+<script>
+    const img = document.querySelector('img');
+    const HoverDiv = document.getElementById('HoverDiv');
+
+    img.addEventListener('mouseover', () => {
+        HoverDiv.style.display = 'block';
+    });
+
+    img.addEventListener('mouseout', () => {
+        HoverDiv.style.display = 'none';
+    });
+</script>
+
+</html>
+

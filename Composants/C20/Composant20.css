@@ -1,0 +1,21 @@
+button {
+    background-color: #7F7BBA;
+    border-radius: 6px;
+    margin: 30rem;
+    border: none;
+    padding: 0.5rem;
+    width: 270px;
+    height: 70px;
+    font-size: x-large;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    border: none;
+    background-color: #ADA6D2;
+    transition: background-color 0.3s ease;
+}
+
+

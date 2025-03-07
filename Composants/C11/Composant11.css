@@ -1,0 +1,12 @@
+img{
+    width: 160px;
+    Height: 160px;
+    border-radius: 28px;
+    margin: 5rem;
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
