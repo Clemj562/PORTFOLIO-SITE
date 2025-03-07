@@ -18,7 +18,7 @@ body{
 .nav{
     padding: 3rem; 
     padding-bottom: 1px;  
-    padding-top: 4rem;
+    padding-top: 1rem;
     display: flex;
     align-items: baseline;
     flex-direction: row;
@@ -69,6 +69,7 @@ img{
     padding-right: 1.5rem;
 
 }
+
 
 .barre a:hover {
     border-bottom: #ADA6D2 2px solid;
