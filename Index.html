@@ -13,22 +13,22 @@
     <header>
         <div class="nav">
             <img class="logo" src="./Content/C.png" alt="Logo" href="">
-            <a href="./Content/CV.pdf" download="./Content/CV.pdf">Mon CV</a>
-            <img class="link" src="./Content/linkedin.png" alt="LogoLinkedin">
+            <nav class="barre">
+                <a href="#">Accueil</a>
+                <a href="#">À propos</a>
+                <a href="#">Projets</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="liens">
+                <a class="bouton" href="./Content/CV.pdf" download="./Content/CV.pdf">Mon CV</a>
+                <a href="https://www.linkedin.com/in/clémence-jégou-a06948341"><img class="link"
+                        src="./Content/linkedin.png" alt="LogoLinkedin"></a>
+            </div>
         </div>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">A propos</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
         <img src="./Content/LamaA.jpg" alt="LamaA">
         <img src="./Content/EffetPeinture.gif" alt="5">
     </header>
     <main>
-
         <div class="minibio">
             <div>
                 <img src="./Content/P.jpg" alt="Photo de profil">
@@ -60,7 +60,96 @@
             </div>
 
         </div>
+        <img class="FondContact" src="/Content/FondContact.gif" alt="Fond">
+        <div class="HardS">
+            <img src="./Content/HardSkill.jpg" alt="hardskill">
+            <img src="./Content/HardSkill.jpg" alt="hardskill">
+            <img src="./Content/HardSkill.jpg" alt="hardskill">
+            <img src="./Content/HardSkill.jpg" alt="hardskill">
+            <img src="./Content/HardSkill.jpg" alt="hardskill">
+            <img src="./Content/HardSkill.jpg" alt="hardskill">
+            <div id="HoverDiv" style="display: none;">Hardskill></div>
+        </div>
+        <div class="Valeurs">
+            <img src="./Content/Illustration.jpg" alt="Illustration">
+            <img src="./Content/Illustration.jpg" alt="Illustration">
+            <img src="./Content/Illustration.jpg" alt="Illustration">
+        </div>
+        <img class="Fond" src="/Content/Fond.gif" alt="Fond">
+        <div class="Logiciels">
+            <img src="./Content/Icône.jpg" alt="Logiciel">
+            <img src="./Content/Icône.jpg" alt="Logiciel">
+            <img src="./Content/Icône.jpg" alt="Logiciel">
+            <img src="./Content/Icône.jpg" alt="Logiciel">
+            <img src="./Content/Icône.jpg" alt="Logiciel">
+        </div>
+        <img class="peinture" src="./Content/EffetPeinture.gif" alt="5">
+        <div class="cartes">
+            <div class="carte">
+                <div class="image">
+                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                </div>
+                <div class="texte">
+                    <div></div>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="image">
+                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                </div>
+                <div class="texte">
+                    <div></div>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="image">
+                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                </div>
+                <div class="texte">
+                    <div></div>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="image">
+                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                </div>
+                <div class="texte">
+                    <div></div>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="image">
+                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                </div>
+                <div class="texte">
+                    <div></div>
+                </div>
+            </div>
+            <div class="carte">
+                <div class="image">
+                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                </div>
+                <div class="texte">
+                    <div></div>
+                </div>
+            </div>
+            
+        </div>
+        
     </main>
 </body>
+
+<script>
+    const img = document.querySelector('img');
+    const HoverDiv = document.getElementById('HoverDiv');
+
+    img.addEventListener('mouseover', () => {
+        HoverDiv.style.display = 'block';
+    });
+
+    img.addEventListener('mouseout', () => {
+        HoverDiv.style.display = 'none';
+    });
+</script>
 
 </html>
