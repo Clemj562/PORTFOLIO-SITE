@@ -13,21 +13,26 @@
     <header>
         <div class="nav">
             <img class="logo" src="./Content/C.png" alt="Logo" href="">
-            <nav class="barre">
-                <a href="#">Accueil</a>
-                <a href="#">À propos</a>
-                <a href="#">Projets</a>
-                <a href="#">Contact</a>
-            </nav>
-            <div class="liens">
-                <a class="bouton" href="./Content/CV.pdf" download="./Content/CV.pdf">Mon CV</a>
-                <a href="https://www.linkedin.com/in/clémence-jégou-a06948341"><img class="link"
-                        src="./Content/linkedin.png" alt="LogoLinkedin"></a>
-            </div>
+            <a class="bouton" href="./Content/CV.pdf" download="./Content/CV.pdf">Mon CV</a>
+            <a href="https://www.linkedin.com/in/clémence-jégou-a06948341"><img class="link"
+                    src="./Content/linkedin.png" alt="LogoLinkedin"></a>
         </div>
-        <img src="./Content/LamaA.jpg" alt="LamaA">
-        <img src="./Content/EffetPeinture.gif" alt="5">
+
+        <nav class="barre">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Projets</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
     </header>
+
+    <img class="P" src="./Content/LamaA.jpg">
+    <img class="P" src="./Content/EffetPeinture.gif">
+
+
     <main>
         <div class="minibio">
             <div>
@@ -77,11 +82,64 @@
         </div>
         <img class="Fond" src="/Content/Fond.gif" alt="Fond">
         <div class="Logiciels">
+            <img src="./Content/VSCODE.png" alt="Logiciel">
             <img src="./Content/Icône.jpg" alt="Logiciel">
             <img src="./Content/Icône.jpg" alt="Logiciel">
             <img src="./Content/Icône.jpg" alt="Logiciel">
             <img src="./Content/Icône.jpg" alt="Logiciel">
-            <img src="./Content/Icône.jpg" alt="Logiciel">
+        </div>
+
+        <div class="Parcours">
+            <div class="CarteP">
+                <img src="./Content/C.png" alt="Titre">
+                <div class="contenu">
+                    <div class="F1">
+                        <h3>BUT Métiers du Multimédia et de l'Internet</h3>
+                        <h4>IUT de Lannion - 22300 Lannion<p>2024-2025</p>
+                        </h4>
+                        <ul>
+                            <li>#</li>
+                            <li>#</li>
+                            <li>#</li>
+                        </ul>
+                    </div>
+                    <div class="F1">
+                        <h3>Baccalauréat Général</h3>
+                        <h4>Lycée René Cassin - 35160 Montfort-Sur-Meu<p>2021-2024</p>
+                        </h4>
+                        <ul>
+                            <li>#</li>
+                            <li>#</li>
+                            <li>#</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="CarteP">
+                <img src="./Content/C.png" alt="Titre">
+                <div class="contenu">
+                    <div class="F1">
+                        <h3>BUT Métiers du Multimédia et de l'Internet</h3>
+                        <h4>IUT de Lannion - 22300 Lannion<p>2024-2025</p>
+                        </h4>
+                        <ul>
+                            <li>#</li>
+                            <li>#</li>
+                            <li>#</li>
+                        </ul>
+                    </div>
+                    <div class="F1">
+                        <h3>Baccalauréat Général</h3>
+                        <h4>Lycée René Cassin - 35160 Montfort-Sur-Meu<p>2021-2024</p>
+                        </h4>
+                        <ul>
+                            <li>#</li>
+                            <li>#</li>
+                            <li>#</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         <img class="peinture" src="./Content/EffetPeinture.gif" alt="5">
         <div class="cartes">
@@ -133,23 +191,88 @@
                     <div></div>
                 </div>
             </div>
-            
+
         </div>
-        
+
+        <div class="FondPopup" style="display: none;">
+            <img src="./Content/GIP.jpg" alt="GrandeImageProjet">
+            <div class=partieT>
+                <h3>NOM DU PROJET</h3>
+                <img src="./Content/Softskill.jpg" alt="Softskill">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor dui metus.</p>
+
+                <h5>MISSIONS</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                <h5>OUTILS</h5>
+                <div class="Q">
+                    <img src="./Content/Logiciel.jpg" alt="logiciel">
+                    <img src="./Content/Logiciel.jpg" alt="logiciel">
+                    <img src="./Content/Logiciel.jpg" alt="logiciel">
+                </div>
+
+                <h5>SAVOIR - ÊTRE</H5>
+                <div class="S">
+                    <img src="./Content/Logiciel.jpg" alt="logiciel">
+                    <img src="./Content/Logiciel.jpg" alt="logiciel">
+                    <img src="./Content/Logiciel.jpg" alt="logiciel">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor dui metus.</p>
+            </div>
+
+        </div>
+
+        <script>
+            const fondPopup = document.querySelector('.FondPopup');
+            const cartes = document.querySelectorAll('.carte .img');
+
+            cartes.forEach(carte => {
+                carte.addEventListener('click', () => {
+                    fondPopup.style.display = 'block';
+                });
+            });
+
+            fondPopup.addEventListener('click', () => {
+                fondPopup.style.display = 'none';
+            });
+        </script>
+
+        <h3>EN DÉCOUVRIR PLUS</h3>
+
+
+        <img class="FC" src="./Content/FondContact.gif" alt="FondContact">
+
+
     </main>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">ACCUEIL</a></li>
+                <li><a href="#">A PROPOS</a></li>
+                <li><a href="#">MES PROJETS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <p>Clémence JEGOU © 2025 - Tous droits réservés - <a href="#">Mentions légales</a></p>
+    </footer>
+
+
+
+    <script>
+        const img = document.querySelector('img');
+        const HoverDiv = document.getElementById('HoverDiv');
+
+        img.addEventListener('mouseover', () => {
+            HoverDiv.style.display = 'block';
+        });
+
+        img.addEventListener('mouseout', () => {
+            HoverDiv.style.display = 'none';
+        });
+    </script>
+
 </body>
-
-<script>
-    const img = document.querySelector('img');
-    const HoverDiv = document.getElementById('HoverDiv');
-
-    img.addEventListener('mouseover', () => {
-        HoverDiv.style.display = 'block';
-    });
-
-    img.addEventListener('mouseout', () => {
-        HoverDiv.style.display = 'none';
-    });
-</script>
 
 </html>
