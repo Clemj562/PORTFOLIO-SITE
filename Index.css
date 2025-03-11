@@ -17,7 +17,6 @@ body {
 
 .nav {
     margin: 5rem;
-    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
 }
@@ -90,18 +89,30 @@ body {
     box-shadow: 0 10px 14px #DCCADE;
 
 }
-
 .barre a {
     text-decoration: none;
     color: white;
     padding: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-
+    position: relative;
 }
 
-.barre a:hover {
-    border-bottom: #ADA6D2 2px solid;
+.barre a:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ADA6D2;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.barre a:hover:before {
+    width: 100%;
 }
 
 .P {
@@ -110,7 +121,25 @@ body {
     height: auto;
 }
 
+.P:first-of-type{
+    width: 85%;
+    height: auto;
+    display: block;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
 /**Main**/
+
+.APROPOS {
+    padding-left: 5rem;
+    position: relative;
+    top: -3rem;
+    width: 60%;
+    height: auto;
+}
 
 .minibio img {
     width: 400px;
@@ -126,6 +155,15 @@ body {
     display: flex;
     flex-direction: row;
     align-content: baseline;
+}
+
+.minibio p:first-of-type {
+    color: black;
+    font-weight: none;
+}
+
+.minibio p:first-of-type strong {
+    font-weight: bolder;
 }
 
 div:first-of-type p {
@@ -150,7 +188,7 @@ div:first-of-type h1 {
 .HardS {
     width: 550px;
     height: auto;
-    margin-left: 5rem;
+    margin-left: 8rem;
     margin-top: 10rem;
     position: relative;
     top: -55rem;
@@ -164,13 +202,26 @@ div:first-of-type h1 {
     transition: transform 0.3s ease;
 }
 
+.SoftS {
+    border-radius: 100%;
+    width: 550px;
+    height: auto;
+    margin-left: 8rem;
+    margin-top: 10rem;
+    position: relative;
+    top: -93rem;
+    right: -40rem;
+
+}
+
 .Valeurs {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     position: relative;
-    top: -20rem;
+    top: -62rem;
+    margin-bottom: 3rem;
 }
 
 .Valeurs img {
@@ -178,6 +229,7 @@ div:first-of-type h1 {
     height: auto;
     border-radius: 100%;
     margin: 4rem;
+    margin-bottom: 1rem;
     transition: transform 0.3s ease;
 }
 
@@ -216,10 +268,20 @@ div:first-of-type h1 {
     top: -8rem;
 }
 
+.MP {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
 .Parcours {
     /*MON PARCOURS*/
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin: 5rem;
 }
 
@@ -230,6 +292,7 @@ div:first-of-type h1 {
     box-shadow: 10px 10px 15px #ADA6D2;
     transition: box-shadow 0.3s ease;
 }
+
 .CarteP:hover {
     box-shadow: 10px 10px 15px #7F7BBA;
     transition: box-shadow 0.3s ease;
@@ -238,7 +301,10 @@ div:first-of-type h1 {
 
 .CarteP h3 {
     background-color: transparent;
-    text-align: none;
+    text-align: left;
+    width: auto;
+    padding-left: 0%;
+    text-shadow: 1px 1px 2px var(--primary-color), 2px 2px 4px var(--primary-color), 3px 3px 6px var(--primary-color);
 }
 
 .CarteP h3:hover {
@@ -250,11 +316,26 @@ div:first-of-type h1 {
 
 }
 
-.CarteP img {
+.Parcours img {
     display: block;
     margin: auto;
     width: 5rem;
     height: auto;
+}
+
+.Parcours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.ContainerP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
 }
 
 .peinture {
@@ -272,6 +353,12 @@ div:first-of-type h1 {
     margin-left: 8rem;
     margin-right: 8rem;
     margin-bottom: 3rem;
+}
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .carte {
@@ -299,27 +386,43 @@ div:first-of-type h1 {
     border: solid #7F7BBA;
 }
 
-.FondPopup {
-    /*REVOIR APPARITION GÊNE*/
+.carte .texte{
+    margin-top: 1rem;
+    box-shadow: 0px 5px 10px #7F7BBA;
+    padding: 2rem;
     border-radius: 30px;
-    background-color: #EDE0EF;
-    width: 1040px;
-    height: 700px;
-    display: block;
-    margin: auto;
-    margin-bottom: 15rem;
+    width: 285px;
+}
+.carte .texte h3{
+    background-color: transparent ;
+    color: black;
 }
 
-.FondPopup img {
-    width: 420px;
-    height: 650px;
-    border-radius: 40px;
-    padding: 25px;
-    position: relative;
-    left: -8rem;
+.lignefirst{
+    display: flex;
+    padding-top: 0rem;
+}
+
+.lignefirst h3{
+    text-align: left;
+    padding-left: 0%;
+    margin-left: 0%;
+}
+
+.lignefirst h5{
+    text-align: right;
 }
 
 
+.carte .texte h3:hover{
+    background-color: transparent  ;
+
+}
+
+.F h4 p {
+    font-weight: bolder;
+    color: #7F7BBA
+}
 
 .Q img {
     width: 70px;
@@ -372,6 +475,67 @@ h3:not(:hover) {
 
 }
 
+.Infos {
+    display: flex;
+    margin: 4rem 8rem;
+}
+
+.Infos img:first-of-type {
+    width: 490px;
+    height: 600px;
+    margin-right: 5rem;
+}
+
+.Contact {
+    display: flex;
+}
+
+.Contact a {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background-color: #7F7BBA;
+    border-radius: 5rem;
+    padding: 1rem;
+    width: 7rem;
+    border: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease,
+        transform 0.3s ease;
+
+}
+
+.Contact a:first-of-type {
+    margin: 1rem;
+    margin-left: 0%;
+}
+
+.Contact a:nth-child(2) {
+    width: 9rem;
+}
+
+
+.Infos .Contact img {
+    width: 50px;
+    height: 50px;
+    margin-right: 0%;
+    padding-right: 0.8rem;
+}
+
+.Contact a:hover {
+    background-color: #ADA6D2;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+
+
 /**Footer**/
 
 footer {
@@ -420,3 +584,171 @@ footer p a:hover {
     color: #A7D7C5;
     transition: color 0.3s ease;
 }
+
+.popup {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 101;
+}
+
+.popup-base {
+    background-color: #0000;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all .2s;
+    width: 100%;
+    z-index: 0;
+}
+
+.popup-content{
+    background-color: #fef6f3;
+    border-radius: 45px;
+    box-shadow: 0 2px 4px #0000000a;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    min-height: 65%;
+    opacity: 0;
+    padding: 50px;
+    transform: scale(.7) translateY(50px);
+    transition: all .2s cubic-bezier(.165, .84, .44, 1);
+    width: 65%;
+    z-index: 1;
+}
+
+.popup-content img:first-of-type {
+    width: 400px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.contenu-popup {
+    display: flex;
+    margin: 0.2rem;
+}
+
+.contenu-popup button {
+    background-color: #7F7BBA;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease,
+        background-color 0.3s ease;
+
+}
+
+.contenu-popup button:hover {
+    background-color: #ADA6D2;
+    transform: scale(1.2);
+    transition: transform 0.3s ease,
+        background-color 0.3s ease;
+}
+    
+
+.texte-popup {
+    margin-left: 2rem;
+    width: 22rem;
+}
+
+.texte-popup .titre{
+    display: flex;
+}
+
+.titre{
+    width: 35rem;
+}
+.texte-popup h3{
+    background-color: transparent;
+    color:black;
+    margin-left: 0%;
+    padding-left: 0%;
+    text-align: left;
+    font-size: 3rem;
+    width: 20rem;
+    padding-top: 0%;
+}
+
+h3#popup-title{
+    width: 30rem;
+}
+
+.contenu-popup img:nth-child(2) {
+    width: 160px;
+    height: 40px;
+    margin-top: 1rem;
+    border-radius: 50px;
+    transition: filter 0.3s ease;
+}
+
+.contenu-popup:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease;
+}
+
+.texte-popup p{
+    width: 32rem;
+}
+
+.popup-hide {
+    opacity: 0;
+    pointer-events: none
+}
+
+.popup-show>.popup-base {
+    background-color: #00000080
+}
+
+.popup-show>.popup-content {
+    opacity: 1;
+    transform: scale(1) translateY(0)
+}
+
+
+.touslesbutton button{
+    background-color: #7F7BBA;
+    border-radius: 15px;
+    border: none;
+    display: block;
+    margin: auto;
+    justify-content: space-between;
+    width: 270px;
+    height: 70px;
+    font-size: x-large;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.touslesbutton .firstbutton{
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.grpboutons {
+    width: 75rem;
+    display: flex;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+
+
