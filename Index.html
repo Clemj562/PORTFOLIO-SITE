@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -10,31 +10,33 @@
 </head>
 
 <body>
-    <header>
-        <div class="nav">
-            <img class="logo" src="./Content/C.png" alt="Logo" href="">
-            <a class="bouton" href="./Content/CV.pdf" download="./Content/CV.pdf">Mon CV</a>
-            <a href="https://www.linkedin.com/in/clémence-jégou-a06948341"><img class="link"
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.body.style.cursor = "url('./Content/lamasouris.png'), auto";
+        });
+    </script>
+
+    <header id="Accueil">
+        <div class="navigation">
+            <img class="logo-site" src="./Content/C.png" alt="Logo">
+            <a class="bouton-CV" href="./Content/CV.pdf" download="./Content/CV.pdf">Mon CV</a>
+            <a href="https://www.linkedin.com/in/clémence-jégou-a06948341"><img class="linkedin"
                     src="./Content/linkedin.png" alt="LogoLinkedin"></a>
         </div>
-
-        <nav class="barre">
+        <nav class="barre-nav">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Apropos">À propos</a></li>
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <img class="P" src="./Content/LamaA.jpg">
-    <img class="P" src="./Content/EffetPeinture.gif">
-
-
     <main>
-        <img class="APROPOS" src="./Content/APROPOS.png" alt="APROPOS">
+        <img class="P" src="./Content/LamaA.jpg" alt="Illustration Titre" style="margin-top: -4rem;">
+        <img class="P" src="./Content/EffetPeinture.jpg" alt="Effet peinture animé">
+        <h1 id="Apropos" class="marchepas">A PROPOS DE MOI</h1>
         <div class="minibio">
             <div>
                 <img src="./Content/P.jpg" alt="Photo de profil">
@@ -65,105 +67,122 @@
                     artistique, qui m’ont permis d’enrichir mes connaissances.</br>
 
                     <br> Au cours de cette formation, je souhaite accomplir beaucoup de projets, afin de m’améliorer
-                    mais
-                    aussi, à la fin de ces 3 ans, de devenir designer graphique.</br>
+                    maisaussi, à la fin de ces 3 ans, de devenir designer graphique.</br>
                 </p>
             </div>
 
         </div>
-        <img class="FondContact" src="./Content/FondContact.gif" alt="Fond">
-        <div class="HardS">
-            <img src="./Content/HardSkill.jpg" alt="hardskill">
-            <img src="./Content/HardSkill.jpg" alt="hardskill">
-            <img src="./Content/HardSkill.jpg" alt="hardskill">
-            <img src="./Content/HardSkill.jpg" alt="hardskill">
-            <img src="./Content/HardSkill.jpg" alt="hardskill">
-            <img src="./Content/HardSkill.jpg" alt="hardskill">
-            <div id="HoverDiv" style="display: none;">Hardskill></div>
+        <img class="FondContact" src="./Content/FondContact.jpg" alt="Fond">
+
+        <div class="competences">
+            <h1>MES COMPETENCES</h1>
+            <div class="skills-titres" style="display: flex; justify-content: space-between;">
+                <h3>HARDSKILLS</h3>
+                <h3>SOFTSKILLS</h3>
+            </div>
+
+            <div class="skills">
+                <div class="HardS">
+                    <img src="./Content/icone1.svg" alt="hardskill">
+                    <img src="./Content/icone2.svg" alt="hardskill">
+                    <img src="./Content/icone3.svg" alt="hardskill">
+                    <img src="./Content/icone4.svg" alt="hardskill">
+                    <img src="./Content/icone5.svg" alt="hardskill">
+                    <img src="./Content/icone6.svg" alt="hardskill">
+                </div>
+                <div>
+                    <img class="SoftS" src="./Content/SoftS.jpg" alt="Softskill">
+                </div>
+            </div>
         </div>
 
-        <script>
+        <h1 style="text-align: center;font-size: 3rem; margin-top: 8rem;margin-bottom: -5rem;">MES VALEURS</h1>
 
-        </script>
-
-        <div>
-            <img class="SoftS" src="./Content/SoftS.jpg" alt="Softskill">
-        </div>
-
-        <div class="Valeurs">
+        <div class="Valeurs" style="margin: 10rem; margin-top: 6rem;">
             <img src="./Content/Illustration.jpg" alt="Illustration">
             <img src="./Content/Illustration.jpg" alt="Illustration">
             <img src="./Content/Illustration.jpg" alt="Illustration">
         </div>
+
+        <h1 style="text-align: center;font-size: 3rem; margin-top: -5rem;">MES OUTILS</h1>
         <img class="Fond" src="./Content/Fond.gif" alt="Fond">
         <div class="Logiciels">
-            <img src="./Content/VSCODE.png" alt="Logiciel">
-            <img src="./Content/DaVinci_Resolve_Studio.webp" alt="Logiciel">
-            <img src="./Content/Icône.jpg" alt="Logiciel">
-            <img src="./Content/Icône.jpg" alt="Logiciel">
-            <img src="./Content/Icône.jpg" alt="Logiciel">
+            <img src="./Content/vscode.svg" alt="Logiciel">
+            <img src="./Content/davinci.png" alt="Logiciel">
+            <img src="./Content/figma.svg" alt="Logiciel">
+            <img src="./Content/krita.svg" alt="Logiciel">
+            <img src="./Content/affinity.svg" alt="Logiciel">
         </div>
 
-        <img class="MP" src="#" alt="MONPARCOURS">
+        <h1 class="second">MON PARCOURS</h1>
 
         <div class="ContainerP">
             <div class="Parcours">
-                <img src="./Content/C.png" alt="Titre">
+                <h2>FORMATIONS</h2>
                 <div class="CarteP">
                     <div class="contenu">
                         <div class="F">
-                            <h3>BUT Métiers du Multimédia et de l'Internet</h3>
-                            <h4>IUT de Lannion - 22300 Lannion<p>| 2024-2025</p>
-                            </h4>
+                            <h3>BUT METIERS DU MULTIMEDIA<br>ET DE L'INTERNET</br></h3>
+                            <div class="contenu-carte">
+                                <h4>IUT de Lannion - 22300 Lannion</h4>
+                                <p>| 2024-2025</p>
+                            </div>
                             <ul>
-                                <li>#</li>
-                                <li>#</li>
-                                <li>#</li>
+                                <li>Création graphique et audiovisuelle</li>
+                                <li>marketing et communication</li>
+                                <li>Développement web et design UI/UX</li>
                             </ul>
                         </div>
                         <div class="F">
-                            <h3>Baccalauréat Général</h3>
-                            <h4>Lycée René Cassin - 35160 Montfort-Sur-Meu<p>| 2021-2024</p>
-                            </h4>
+                            <h3>BACCALAUREAT GENERAL</h3>
+                            <div class="contenu-carte">
+                                <h4>Lycée René Cassin - 35160 Montfort-Sur-Meu</h4>
+                                <p>| 2021-2024</p>
+                            </div>
                             <ul>
-                                <li>Spécialités HGGSP & SES</li>
-                                <li>#</li>
-                                <li>#</li>
+                                <li>Spécialités HGGSP & SES, option droit</li>
+                                <li>Compétences en communication, rédaction et analyse</li>
+                                <li>Membre du CVL</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="Parcours">
-                <img src="./Content/C.png" alt="Titre">
+                <h2>EXPERIENCES</h2>
                 <div class="CarteP">
                     <div class="contenu">
-                        <div class="F1">
-                            <h3>Emploi d'hôtesse de Caisse</h3>
-                            <h4>Centre commercial E.Leclerc - 35137 Pleumeleuc<p>| 2024-2025</p>
-                            </h4>
+                        <div class="F">
+                            <h3>HÔTESSE DE CAISSE</h3>
+                            <div class="contenu-carte">
+                                <h4>Centre commercial E.Leclerc<br>35137 Pleumeleuc</br></h4>
+                                <p>| 2024-2025</p>
+                            </div>
                             <ul>
-                                <li>Accueil de la clientèle</li>
+                                <li>Accueil et aide à la clientèle</li>
                                 <li>Comptage</li>
-                                <li>#</li>
                             </ul>
                         </div>
-                        <div class="F1">
-                            <h3>Baccalauréat Général</h3>
-                            <h4>Lycée René Cassin - 35160 Montfort-Sur-Meu<p>| 2021-2024</p>
-                            </h4>
+                        <div class="F">
+                            <h3>GARDE D'ENFANTS</h3>
+                            <div class="contenu-carte">
+                                <h4>35137 Pleumeleuc</h4>
+                                <p>| 2023-2025</p>
+                            </div>
                             <ul>
-                                <li>#</li>
-                                <li>#</li>
-                                <li>#</li>
+                                <li>Autonomie</li>
+                                <li>Responsabilité</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img class="peinture" src="./Content/EffetPeinture.gif" alt="5">
-        <div class="touslesbutton">
+
+        <img class="P" src="./Content/EffetPeinture.jpg" alt="Effet peinture animé">
+        <h1 id="Projets" style="text-align: center; margin-top: 5rem; font-size: 3rem;margin-bottom: -6rem;">MES PROJETS
+        </h1>
+        <div class="touslesbutton" onclick="selectCategory(this)">
             <button class="firstbutton">TOUS</button>
             <div class="grpboutons">
                 <button>AUDIOVISUEL</button>
@@ -175,13 +194,13 @@
         <div class="cartes">
             <div class="carte" id="1">
                 <div class="image">
-                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                    <img class="img" src="./Content/alwestfest.jpg" alt="ImageProjet" />
                 </div>
                 <div class="texte">
                     <div>
                         <div class="lignefirst">
                             <h3>À L'WEST FEST</h3>
-                            <h5>DATE</h5>
+                            <h5>2025</h5>
                         </div>
                         <p>Catégorie</p>
                     </div>
@@ -189,13 +208,13 @@
             </div>
             <div class="carte" id="2">
                 <div class="image">
-                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                    <img class="img" src="./Content/ichiraku2.jpg" alt="ImageProjet" />
                 </div>
                 <div class="texte">
                     <div>
                         <div class="lignefirst">
                             <h3>ICHIRAKU'S RAMEN</h3>
-                            <h5>DATE</h5>
+                            <h5>2025</h5>
                         </div>
                         <p>Catégorie</p>
                     </div>
@@ -203,13 +222,13 @@
             </div>
             <div class="carte" id="3">
                 <div class="image">
-                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                    <img class="img" src="./Content/pokemon.jpg" alt="ImageProjet" />
                 </div>
                 <div class="texte">
                     <div>
                         <div class="lignefirst">
                             <h3>POKEMANIA</h3>
-                            <h5>2025</h5>
+                            <h5>2024</h5>
                         </div>
                         <p>Catégorie</p>
                     </div>
@@ -217,13 +236,13 @@
             </div>
             <div class="carte" id="4">
                 <div class="image">
-                    <img class="img" src="./Content/Lama.jpg" alt="ImageProjet" />
+                    <img class="img" src="./Content/foodbox.jpg" alt="ImageProjet" />
                 </div>
                 <div class="texte">
                     <div>
                         <div class="lignefirst">
                             <h3>FOODBOX</h3>
-                            <h5>DATE</h5>
+                            <h5>2024</h5>
                         </div>
                         <p>Catégorie</p>
                     </div>
@@ -237,9 +256,9 @@
                     <div>
                         <div class="lignefirst">
                             <h3>À venir !</h3>
-                            <h5>DATE</h5>
+                            <h5>?</h5>
                         </div>
-                        <p>Catégorie</p>
+                        <p>?</p>
                     </div>
                 </div>
             </div>
@@ -251,9 +270,9 @@
                     <div>
                         <div class="lignefirst">
                             <h3>À venir !</h3>
-                            <h5>DATE</h5>
+                            <h5>?</h5>
                         </div>
-                        <p>Catégorie</p>
+                        <p>?</p>
                     </div>
                 </div>
             </div>
@@ -299,14 +318,18 @@
 
         <h3>EN DÉCOUVRIR PLUS</h3>
 
-        <img class="FC" src="./Content/FondContact.gif" alt="FondContact">
+        <img class="FC" src="./Content/FondContact.jpg" alt="FondContact">
+    </main>
 
+    <aside>
         <div class="Infos">
             <img src="./Content/IllustrationI.jpg" alt="illustration">
-            <div class="texteI">
-                <img src="#" alt="titre">
-                <p>Lorem</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="oskour">
+                <div class="last">
+                    <h1 id="Contact" style="font-size: 3rem;margin-top: 0%;color: white;">CONTACT</h1>
+                    <p>Lorem</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
                 <div class="Contact" alt="BC">
                     <a href="mailto:clemence.jegou@gmail.com"><img src="./Content/Mail.png">MAIL</a>
                     <a href="https://www.linkedin.com/in/clémence-jégou-a06948341"><img
@@ -314,17 +337,20 @@
                     <a href="tel:+33671312057"><img src="./Content/Mail.png">TEL</a>
                 </div>
             </div>
+
         </div>
-    </main>
+        </div>
+    </aside>
+
 
 
     <footer>
         <nav>
             <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="#">A PROPOS</a></li>
-                <li><a href="#">MES PROJETS</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#Accueil">ACCUEIL</a></li>
+                <li><a href="#Apropos">A PROPOS</a></li>
+                <li><a href="#Projets">MES PROJETS</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
             </ul>
         </nav>
         <p>Clémence JEGOU © 2025 - Tous droits réservés - <a href="#">Mentions légales</a></p>
@@ -336,6 +362,7 @@
     const cartes = document.querySelectorAll('.carte');
     const popup = document.querySelector('.popup');
     const popupquit = document.querySelector('.popupquit');
+    const touslesbutton = document.querySelector('.touslesbutton');
 
     cartes.forEach(carte => {
         carte.addEventListener('click', () => {
@@ -363,23 +390,23 @@
             switch (carte.id) {
                 case "1":
                     titreValue = "À L'WEST FEST";
-                    imageUrl = "";
-                    textValue = " Dans le cadre d’un projet au sein de ma formation, j’ai dû réaliser une communication visuelle, sous la forme d’une affiche. afin d’annoncer l’organisation de la seconde édition du festival  “Al’West Fest”, organisé par l’IUT afin de promouvoir les travaux des étudiants MMI de Lannion.";
+                    imageUrl = "./Content/affiche103.jpg";
+                    textValue = " Dans le cadre d’un projet au sein de ma formation, j’ai dû réaliser une communication visuelle, sous la forme d’une affiche. afin d’annoncer l’organisation de la seconde édition du festival  “À l’West Fest”, organisé par l’IUT afin de promouvoir les travaux des étudiants MMI de Lannion.";
                     textBValue = "Description du premier projet";
                     outilsValue = "";
                     savoirêtreValue = "";
                     break;
                 case "2":
                     titreValue = "ICHIRAKU'S RAMEN";
-                    imageUrl = "";
+                    imageUrl = "./Content/ichiraku.jpg";
                     textValue = " Dans le cadre d’un projet personnel, j’ai réalisé une affiche inspirée de l’univers de Naruto, dans lequel un plat possède une place importante: Les Ramen. C’est pour cela que j’ai décidé de les représenter au centre de mon affiche, où j’ai souhaité montrer mon style graphique.";
-                    textBValue = "Description du deuxième projet";
+                    textBValue = "J'ai d'abord fait des recherches sur l’application Pinterest afin de m’inspirer. Par la suite j'ai réalisé le brouillon de l'affiche pour visualiser le rendu, avant de commencer la version finale sur Affinity Designer";
                     outilsValue = "";
                     savoirêtreValue = "";
                     break;
                 case "3":
                     titreValue = "POKEMANIA";
-                    imageUrl = "";
+                    imageUrl = "./Content/pokemania.png";
                     textValue = "Dans le cadre d’un projet au sein de ma formation, j’ai dû réaliser un site web basé sur l’univers de Pokémon. En effet, nous devions permettre à l’utilisateur de collectionner ces derniers. J’ai donc réalisé avant tout le design du site, tout en lui donnant un nom : “Pokémania”.";
                     textBValue = "Description du troisième projet";
                     outilsValue = "";
@@ -387,7 +414,7 @@
                     break;
                 case "4":
                     titreValue = "FOODBOX";
-                    imageUrl = "";
+                    imageUrl = "./Content/AfficheSae106.jpg";
                     textValue = " Dans le cadre d’un projet au sein de ma formation, j’ai dû réaliser une communication visuelle, sous la forme d’une affiche.  En effet, nous devions présenter un projet, une solution, en lien avec l’ODD “Faim Zéro”. Par conséquent, nous avons opté pour une boîte alimentaire, que j’ai donc représenté ici.";
                     textBValue = "Description du quatrième projet";
                     outilsValue = "";
@@ -415,6 +442,9 @@
             if (textB) textB.innerText = textBValue;
             if (outils) outils.innerText = outilsValue;
             if (savoirêtre) savoirêtre.innerText = savoirêtreValue;
+            if (image) image.setAttribute("src", imageUrl);
+
+
         });
     });
 
@@ -423,9 +453,16 @@
         popup.classList.add('popup-hide');
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
-        document.body.style.cursor = "url('./Content/Lamasouris.png'), auto";
-    });
+
+    function selectCategory(button) {
+
+
+        document.querySelectorAll('.touslesbutton button').forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        button.classList.add('active');
+    }
 
 </script>
 
